@@ -1,5 +1,6 @@
 # blog
 microservices
+Access through 'posts.com'
 
 
 ## Docker:
@@ -28,3 +29,8 @@ kubectl rollout restart deployment [deployment name]
 Added ingress via ingress-nginx. (see https://kubernetes.github.io/ingress-nginx/deploy/)
 
 Updated host file (/etc/hosts) to include posts.com as redirect when attempting to connect to localhost (127.0.0.1 posts.com) 
+
+## Skaffold:
+
+Installed Skaffold and added a skaffold config file. Detects updates to .js files and applies as needed.
+On initial start, Skaffold builds, deploys, and starts.
